@@ -1,0 +1,19 @@
+<form [formGroup]="form">
+  <prizm-input-layout label="Label">
+    <prizm-input-layout-month-range
+      formControlName="period"
+    ></prizm-input-layout-month-range>
+  </prizm-input-layout>
+
+
+	<prizm-input-layout label="Промышленность">
+    <prizm-input-multi-select
+      [formControl]="valueControl"
+      [items]="items"
+      selectAllItem="Выбрать все"
+      placeholder="Выберите из списка"
+    >
+    </prizm-input-multi-select>
+  </prizm-input-layout>
+
+</form>
